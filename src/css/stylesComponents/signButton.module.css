@@ -1,0 +1,33 @@
+.div {
+  background-color: rgba(17, 221, 84, 0.6);
+  font-size: 10px;
+}
+
+.button {
+  max-height: 3rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.6rem 1.4rem 0.6rem 1.4rem;
+  cursor: pointer;
+  align-items: center;
+  background-color: #11dd54;
+  border: none;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.button:focus {
+  border: 2px solid #ffffff;
+}
+.button_img {
+  block-size: 1.1rem;
+}
+.button_h4 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0;
+}
+
+/*# sourceMappingURL=signButton.module.css.map */

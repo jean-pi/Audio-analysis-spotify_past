@@ -1,0 +1,27 @@
+
+
+@use "../pallette.module.scss" as *;
+@use "../fonts.module.scss" as *;
+
+.button{
+    max-height: 3rem;
+    border-radius: 6.25rem;
+    display: flex;
+    gap: .6rem;
+    padding: .6rem 1.4rem 0.6rem 1.4rem;
+    cursor: pointer;
+    align-items: center;
+    background-color: $green-main;
+    border: none;
+    border: 2px solid #ffffff00;
+    &:focus{
+        border: 2px solid $white_active;
+    }
+    &_img{
+        block-size: 1.1rem;
+    }
+    &_h4{
+        @include inter-Font( $black_font, 0.9rem, 500)
+    }
+
+}

@@ -1,0 +1,42 @@
+@use "../fonts.module.scss" as *;
+@use "../pallette.module.scss" as *;
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 44rem;
+    &_backgroungH1_1{
+        width: 36.5rem;
+        height: 5rem;
+        position: absolute;
+        background-color: $completeBlack;
+    }
+    &_backgroungH1_2{
+        width: 22rem;
+        height: 7.5rem;
+        top: 5rem;
+        position: absolute;
+        background-color: $completeBlack;
+    }
+    &_h1{
+        @include inter-Font($white_font, 4rem, 800);
+        border: 2px solid #ffffff00;
+        position: relative;
+        left: .4rem;
+        &:focus{
+            border: 2px solid $white_active;
+        }
+    }
+    &_h2{
+        @include inter-Font($white_font, 1.1rem, 300);
+        border: 2px solid #ffffff00;
+        line-height: 128%;
+        &:focus{
+            border: 2px solid $white_active;
+        }
+    }
+}
+

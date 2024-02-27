@@ -1,0 +1,29 @@
+.div {
+  background-color: rgba(17, 221, 84, 0.6);
+  font-size: 10px;
+}
+
+.p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.6rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  line-height: 128%;
+  letter-spacing: -0.000975rem;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.p:focus {
+  border: 2px solid #ffffff;
+}
+.p_a {
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.p_a:focus {
+  border: 2px solid #ffffff;
+}
+
+/*# sourceMappingURL=privacyPolicyWarning.module.css.map */

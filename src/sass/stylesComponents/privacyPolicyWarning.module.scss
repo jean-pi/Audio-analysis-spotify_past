@@ -1,0 +1,22 @@
+@use "../fonts.module.scss" as *;
+@use "../pallette.module.scss" as *;
+
+
+.p{
+    @include inter-Font( $white_font, 0.6rem, 200);
+    text-align: center;
+    line-height: 128%;
+    letter-spacing: -0.000975rem;
+    border: 2px solid #ffffff00;
+    &:focus{
+        border: 2px solid $white_active;
+    }
+    &_a{
+        color: $white_font;
+        border: 2px solid #ffffff00;
+        &:focus{
+            border: 2px solid $white_active;
+        }
+    }
+}
+

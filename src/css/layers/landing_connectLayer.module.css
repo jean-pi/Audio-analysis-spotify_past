@@ -1,0 +1,10 @@
+.container {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin: auto;
+}
+
+/*# sourceMappingURL=landing_connectLayer.module.css.map */

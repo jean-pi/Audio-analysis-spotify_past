@@ -1,0 +1,16 @@
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+
+
+@mixin inter-Font($color, $size, $weight){
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  margin: 0;
+}
+

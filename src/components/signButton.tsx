@@ -1,14 +1,21 @@
-import { CONNECT_SPOTIFY_ACCOUNT } from "../constants/actionTypes";
 import { IMG_SPOTIFY } from "../constants/actionTypes";
+import signButtonStyles from "../sass/stylesComponents/signButton.module.scss"
 
 
-export default function SignButton() {
+interface signButtonProps{
+    text : string,
+    event: () => void
+}
+
+
+export default function SignButton({text, event}: signButtonProps) {
+
   return (
     <>
-        <button >
-            <img src={IMG_SPOTIFY.url} alt={IMG_SPOTIFY.alt} />
-            <h4>{CONNECT_SPOTIFY_ACCOUNT}</h4>
-        </button>
+      <button className={signButtonStyles.button} onClick={event} >
+          <img className={signButtonStyles.button_img} src={IMG_SPOTIFY.url} alt={IMG_SPOTIFY.alt} />
+          <h4 className={signButtonStyles.button_h4}>{text}</h4>
+      </button>
     </>
   )
 }

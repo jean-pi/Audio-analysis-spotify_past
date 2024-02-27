@@ -1,4 +1,4 @@
-
+import HydraBackgroungStyles from "../sass/stylesComponents/hydraBackground.module.scss";
 
 
   // hydra no soporta ts

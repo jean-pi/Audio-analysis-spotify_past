@@ -1,22 +1,19 @@
+import HydraBackgroung from "../components/hydraBackgroung";
+import LandingLayerMainText from "../components/layersComponents/landingLayer_mainText";
+import LandingLayer_signBtn_PrivacyMssg from "../components/layersComponents/landingLayer_signBtnPrivacyMsg"
 
-
-import HydraBackgroung from "../components/hydraBackgroung"
-import SignButton from "../components/signButton"
-import PrivacyPolicyWarning from "../components/privacyPolicyWarning"
-
+import stylesPage from "../sass/pagesStyles/landinPage.module.scss"
 
 export function Landing() {
 
 
   return (
-    <>
-      {/* <HydraBackgroung/> */}
+    <div className={stylesPage.container}>
+      <HydraBackgroung/>
 
-      <div>
-        <SignButton/>
-        <PrivacyPolicyWarning/>
-      </div>
+      <LandingLayerMainText/>
+      <LandingLayer_signBtn_PrivacyMssg/>
 
-    </>
+    </div>
   )
 }
