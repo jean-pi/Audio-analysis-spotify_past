@@ -1,6 +1,5 @@
 import PrivacyPolicyWarning from "../privacyPolicyWarning"
-import SignButton from "../signButton"
-import { CONNECT_SPOTIFY_ACCOUNT } from "../../constants/actionTypes"
+import ConnectButton from "../connetButton"
 
 import landingconnectAcountLayerStyles from "../../sass/layers/landing_connectLayer.module.scss"
 
@@ -13,10 +12,7 @@ export default function LandingLayer_signBtn_PrivacyMssg() {
   return (
     <div className={landingconnectAcountLayerStyles.container}>
 
-    <SignButton  
-      text = {CONNECT_SPOTIFY_ACCOUNT}
-      event = { () => console.log("sign")} 
-    />
+    <ConnectButton/>
 
     <PrivacyPolicyWarning/>
     

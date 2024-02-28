@@ -4,12 +4,13 @@
 }
 
 .p {
+  font-size: clamp(0.61rem, 0.5rem + 0.18vw, 6rem);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: 0.6rem;
   font-weight: 200;
   color: #ffffff;
   margin: 0;
+  font-display: fallback;
   text-align: center;
   line-height: 128%;
   letter-spacing: -0.000975rem;

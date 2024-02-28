@@ -6,43 +6,49 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 44rem;
 }
-.container_backgroungH1_1 {
-  width: 36.5rem;
-  height: 5rem;
-  position: absolute;
-  background-color: #000000;
-}
-.container_backgroungH1_2 {
-  width: 22rem;
-  height: 7.5rem;
-  top: 5rem;
-  position: absolute;
-  background-color: #000000;
-}
 .container_h1 {
+  font-size: clamp(2.1rem, 0.5rem + 3.2vw, 6rem);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: 4rem;
   font-weight: 800;
   color: #ffffff;
   margin: 0;
+  font-display: fallback;
   border: 2px solid rgba(255, 255, 255, 0);
-  position: relative;
-  left: 0.4rem;
+  word-break: keep-all;
+  -ms-word-break: keep-all;
+  line-height: clamp(2.5rem, 5.903vw - 0.5rem, 4rem);
+  padding: 0.15rem 0;
 }
 .container_h1:focus {
   border: 2px solid #ffffff;
 }
+@media (min-width: 91.25em) {
+  .container_h1 {
+    line-height: clamp(2.5rem, 5.003vw - 0.5rem, 6.4rem);
+  }
+}
+.container_h1_span {
+  padding: 0rem 0.6rem 0 0.6rem;
+  background: #000000;
+}
+.container_h1_span:nth-child(1) {
+  padding-bottom: 0.3rem;
+}
+.container_h1_span:nth-child(3) {
+  padding-bottom: 0.1rem;
+}
 .container_h2 {
+  font-size: clamp(1rem, 0.5rem + 0.7vw, 6rem);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: 1.1rem;
   font-weight: 300;
   color: #ffffff;
   margin: 0;
+  font-display: fallback;
   border: 2px solid rgba(255, 255, 255, 0);
   line-height: 128%;
 }

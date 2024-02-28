@@ -3,7 +3,7 @@
 
 
 .p{
-    @include inter-Font( $white_font, 0.6rem, 200);
+    @include inter-Font( $white_font, 0.18vw, .61rem, 200);
     text-align: center;
     line-height: 128%;
     letter-spacing: -0.000975rem;

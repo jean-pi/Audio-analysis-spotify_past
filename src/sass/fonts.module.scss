@@ -5,12 +5,14 @@
 
 
 
-@mixin inter-Font($color, $size, $weight){
+@mixin inter-Font($color, $size, $minSize, $weight){
+  font-size: clamp( $minSize, 0.5rem + $size, 6rem);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-size: $size;
   font-weight: $weight;
   color: $color;
   margin: 0;
+  font-display: fallback;
+
 }
 
